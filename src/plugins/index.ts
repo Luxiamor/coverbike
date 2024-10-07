@@ -5,14 +5,15 @@
  */
 
 // Plugins
-import vuetify from './vuetify'
-import router from '../router'
+import vuetify from "./vuetify";
+import router from "@/router";
+import { loadFonts } from "@/plugins/webfontloader";
 
 // Types
-import type { App } from 'vue'
+import type { App } from "vue";
 
-export function registerPlugins (app: App) {
-  app
-    .use(vuetify)
-    .use(router)
-}
+export default async (app: App) => {
+  loadFonts();
+  app.use(vuetify);
+  app.use(router);
+};
