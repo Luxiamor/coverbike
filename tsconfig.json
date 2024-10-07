@@ -5,28 +5,19 @@
     "lib": ["DOM", "ESNext"],
     "baseUrl": ".",
     "module": "ESNext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "paths": {
       "@/*": ["src/*"]
     },
     "resolveJsonModule": true,
-    "types": [
-      "vite/client",
-      "unplugin-vue-router/client"
-    ],
-    "allowJs": true,
+    "types": ["node", "vuetify"],
     "strict": true,
-    "strictNullChecks": true,
-    "noUnusedLocals": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
-    "skipLibCheck": true
+    "useDefineForClassFields": true,
+    "allowSyntheticDefaultImports": true,
+    "composite": true,
+    "sourceMap": false
   },
-  "include": [
-    "src/**/*",
-    "src/**/*.vue"
-  ],
-  "exclude": ["dist", "node_modules", "cypress"],
-  "references": [{ "path": "./tsconfig.node.json" }],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "vite.config.mts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
