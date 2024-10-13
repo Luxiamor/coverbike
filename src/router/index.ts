@@ -8,7 +8,7 @@
 import { createRouter, createWebHistory } from "vue-router/auto";
 
 const routes = [
-  { name: "Home", path: "/", component: () => import("@/pages/index.vue") },
+  { name: "Home", path: "/", component: () => import("@/pages/Home.vue") },
   { path: "/404", component: () => import("@/components/HelloWorld.vue") },
   { path: "/:catchAll(.*)", redirect: "/404" },
 ];
