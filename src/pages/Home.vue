@@ -27,8 +27,17 @@
   </v-container>
   <v-container class="pa-0" fluid :height="600">
     <v-row style="height: 600px">
-      <v-col style="height: 600px">
-        <v-window v-model="window" continuous style="height: 600px" show-arrows>
+      <v-col cols="6" style="height: 600px">
+        <v-img src="../../public/map.png">
+          <template v-slot:default>
+            <div class="d-flex align-center justify-center fill-height">
+              <v-btn @click="maps"> Venir nous voir </v-btn>
+            </div>
+          </template>
+        </v-img>
+      </v-col>
+      <v-col cols="6" style="height: 600px">
+        <v-window v-model="window1" continuous style="height: 600px" show-arrows>
           <v-window-item :key="1" style="height: 600px">
             <v-card :location="'center'" :height="500" :width="600" color="grey-darken-1">
               <v-row style="height: 100%">
@@ -169,7 +178,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 
-const window = ref(0);
+const window1 = ref(0);
 const rating1 = ref(5);
 const rating2 = ref(4);
 const rating3 = ref(4);
@@ -178,8 +187,12 @@ const rating5 = ref(5);
 const rating6 = ref(5);
 onMounted(() => {
   setInterval(() => {
-    if (window.value < 5) window.value += 1;
-    else window.value = 0;
+    if (window1.value < 5) window1.value += 1;
+    else window1.value = 0;
   }, 8000);
 });
+
+const maps = () => {
+  window.open("https://maps.app.goo.gl/KE6mCQERRCcfLJH28", "_blank");
+};
 </script>
