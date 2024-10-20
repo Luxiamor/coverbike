@@ -14,10 +14,10 @@ import { createVuetify } from "vuetify";
 const darkTheme = {
   dark: true,
   colors: {
-    primary: "",
+    primary: "#DD2C00",
     secondary: "",
-    background: "",
-    footer: "",
+    background: "#F5F5F5",
+    footer: "#263238",
   },
 };
 

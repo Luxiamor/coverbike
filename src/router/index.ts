@@ -8,8 +8,11 @@
 import { createRouter, createWebHistory } from "vue-router/auto";
 
 const routes = [
-  { name: "Home", path: "/", component: () => import("@/pages/index.vue") },
+  { name: "Home", path: "/", component: () => import("@/pages/Home.vue") },
   { path: "/404", component: () => import("@/components/HelloWorld.vue") },
+  { name: "RGPD", path: "/RGPD", component: () => import("@/pages/RGPD.vue") },
+  { name: "Contact", path: "/contact", component: () => import("@/pages/Contact.vue") },
+  { name: "RDV", path: "/rdv", component: () => import("@/pages/RDV.vue") },
   { path: "/:catchAll(.*)", redirect: "/404" },
 ];
 
