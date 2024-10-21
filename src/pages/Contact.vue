@@ -3,7 +3,7 @@
     <v-row justify="center" align="center" dense style="width: 100%; height: 100%">
       <v-col cols="4">
         <h1>Une question ?</h1>
-        <h3>Écrivez nous et nous répondrons dans les plus bref délais</h3>
+        <h3>Écrivez-nous et nous répondrons dans les plus brefs délais</h3>
       </v-col>
       <v-col cols="6">
         <v-card class="pt-5" color="white" border="xl">

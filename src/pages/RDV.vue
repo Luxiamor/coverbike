@@ -20,7 +20,7 @@
             <v-text-field
               @click:control="showDatePicker = !showDatePicker"
               v-model="date"
-              label="date"
+              label="Date"
               :rules="[rules.required]"
             ></v-text-field>
             <v-date-picker

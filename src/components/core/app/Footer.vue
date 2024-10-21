@@ -14,7 +14,7 @@
           <router-link class="text-black text-decoration-none" :to="cat.link">{{ cat.label }}</router-link>
         </v-col>
       </v-row>
-      <v-row> Tel: +331234567889 </v-row>
+      <v-row> Tél: +331234567889 </v-row>
       <v-row class="mt-5"> Email: coverbike@gmail.com </v-row>
       <v-row class="mt-5">
         <v-icon @click="instagram" class="mr-5 cursor-pointer" icon="mdi-instagram"></v-icon>
@@ -31,7 +31,7 @@ import { RouterLink } from "vue-router";
 
 const categ: any = ref([
   { label: "Contact", link: "contact" },
-  { label: "Mention légales", link: "legal" },
+  { label: "Mentions légales", link: "legal" },
   { label: "RGPD", link: "rgpd" },
 ]);
 

@@ -44,14 +44,14 @@
                 <v-col cols="6" align-self="center">
                   <v-avatar :size="200" class="ml-10">
                     <v-img
-                      alt="Bernadette"
-                      src="https://cdn.pixabay.com/photo/2023/08/07/15/18/woman-8175307_640.jpg"
+                      alt="Bernard"
+                      src="https://cdn.pixabay.com/photo/2023/02/13/20/49/old-man-7788342_1280.jpg"
                     ></v-img>
                   </v-avatar>
                 </v-col>
                 <v-col cols="6" align-self="center">
                   <v-rating v-model="rating1" readonly active-color="orange-lighten-1"></v-rating>
-                  <p class="text-h4">Bernadette</p>
+                  <p class="text-h4">Bernard</p>
                   <p>
                     J'ai récemment fait recouvrir ma moto et je suis ravi du résultat ! Je recommande vivement ce site
                     pour tous vos besoins de covering !
@@ -67,7 +67,7 @@
                   <v-avatar :size="200" class="ml-10">
                     <v-img
                       alt="Gérard"
-                      src="https://cdn.pixabay.com/photo/2023/05/06/12/17/music-7974197_1280.jpg"
+                      src="https://cdn.pixabay.com/photo/2023/07/20/04/45/leva-8138344_1280.jpg"
                     ></v-img>
                   </v-avatar>
                 </v-col>
@@ -85,14 +85,14 @@
                 <v-col cols="6" align-self="center">
                   <v-avatar :size="200" class="ml-10">
                     <v-img
-                      alt="Jess"
-                      src="https://media.istockphoto.com/id/1452687636/fr/photo/jeune-femme-se-lie-avec-son-chat-dans-un-appartement.jpg?s=2048x2048&w=is&k=20&c=3LED2SeBqObd4VgvS7y8LQ0z8iCZM9PqOXYYjhf_nZA="
+                      alt="Huguette"
+                      src="https://cdn.pixabay.com/photo/2015/09/01/20/51/old-woman-917608_1280.jpg"
                     ></v-img>
                   </v-avatar>
                 </v-col>
                 <v-col cols="6" align-self="center">
                   <v-rating v-model="rating3" readonly active-color="orange-lighten-1"></v-rating>
-                  <p class="text-h4">Jess</p>
+                  <p class="text-h4">Huguette</p>
                   <p>
                     Je suis très satisfait du travail réalisé sur mon 2 roues, le covering est magnifique et durable.
                     Merci beaucoup !
@@ -122,32 +122,16 @@
               <v-row style="height: 100%">
                 <v-col cols="6" align-self="center">
                   <v-avatar :size="200" class="ml-10">
-                    <v-img alt="Léa" src="https://cdn.pixabay.com/photo/2023/11/02/05/23/woman-8359670_640.png"></v-img>
-                  </v-avatar>
-                </v-col>
-                <v-col cols="6" align-self="center">
-                  <v-rating v-model="rating5" readonly active-color="orange-lighten-1"></v-rating>
-                  <p class="text-h4">Léa</p>
-                  <p>"Excellent service et produit de haute qualité ! J'adore le nouveau look de ma moto</p>
-                </v-col>
-              </v-row>
-            </v-card>
-          </v-window-item>
-          <v-window-item :key="6" style="height: 600px">
-            <v-card :location="'center'" :height="500" :width="600" color="grey-darken-1">
-              <v-row style="height: 100%">
-                <v-col cols="6" align-self="center">
-                  <v-avatar :size="200" class="ml-10">
                     <v-img
-                      alt="Sparky"
-                      src="https://cdn.pixabay.com/photo/2024/02/17/09/39/cat-8579018_1280.jpg"
+                      alt="Huges"
+                      src="https://cdn.pixabay.com/photo/2016/09/24/03/20/man-1690965_1280.jpg"
                     ></v-img>
                   </v-avatar>
                 </v-col>
                 <v-col cols="6" align-self="center">
-                  <v-rating v-model="rating6" readonly active-color="orange-lighten-1"></v-rating>
-                  <p class="text-h4">Sparky</p>
-                  <p>Miaou !</p>
+                  <v-rating v-model="rating5" readonly active-color="orange-lighten-1"></v-rating>
+                  <p class="text-h4">Huges</p>
+                  <p>"Excellent service et produit de haute qualité ! J'adore le nouveau look de ma moto</p>
                 </v-col>
               </v-row>
             </v-card>
@@ -160,15 +144,19 @@
     <v-row>
       <v-col>
         <v-carousel :height="600" cycle hide-delimiters show-arrows="hover" :interval="10000">
-          <v-carousel-item src="../../public/covering 2.jpg" :aspect-ratio="16 / 9"></v-carousel-item>
           <v-carousel-item src="../../public/covering 3.jpg" :aspect-ratio="16 / 9"></v-carousel-item>
           <v-carousel-item src="../../public/covering 4.png" :aspect-ratio="16 / 9"></v-carousel-item>
           <v-carousel-item src="../../public/covering 6.jpg" :aspect-ratio="16 / 9"></v-carousel-item>
           <v-carousel-item src="../../public/covering 7.jpeg" :aspect-ratio="16 / 9"></v-carousel-item>
-          <v-carousel-item src="../../public/covering 8.png" :aspect-ratio="16 / 9"></v-carousel-item>
           <v-carousel-item src="../../public/covering 5.png" :aspect-ratio="16 / 9"></v-carousel-item>
-          <v-carousel-item src="../../public/covering 9.jpg" :aspect-ratio="16 / 9"></v-carousel-item>
           <v-carousel-item src="../../public/covering 10.png" :aspect-ratio="16 / 9"></v-carousel-item>
+          <v-carousel-item src="../../public/covering 11.jpg" :aspect-ratio="16 / 9"></v-carousel-item>
+          <v-carousel-item src="../../public/covering 12.jpg" :aspect-ratio="16 / 9"></v-carousel-item>
+          <v-carousel-item src="../../public/covering 13.jpg" :aspect-ratio="16 / 9"></v-carousel-item>
+          <v-carousel-item src="../../public/covering 14.jpg" :aspect-ratio="16 / 9"></v-carousel-item>
+          <v-carousel-item src="../../public/covering 16.jpg" :aspect-ratio="16 / 9"></v-carousel-item>
+          <v-carousel-item src="../../public/covering 17.jpg" :aspect-ratio="16 / 9"></v-carousel-item>
+          <v-carousel-item src="../../public/covering 18.jpg" :aspect-ratio="16 / 9"></v-carousel-item>
         </v-carousel>
       </v-col>
     </v-row>
@@ -187,7 +175,7 @@ const rating5 = ref(5);
 const rating6 = ref(5);
 onMounted(() => {
   setInterval(() => {
-    if (window1.value < 5) window1.value += 1;
+    if (window1.value < 4) window1.value += 1;
     else window1.value = 0;
   }, 8000);
 });
